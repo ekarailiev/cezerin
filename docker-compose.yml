@@ -32,7 +32,7 @@ services:
   db:
     image: "mongo:3.4.10-jessie"
     volumes:
-      - /var/www/karailiev.com/db1:/data/db
+      - /var/www/ekarailiev.com/db1:/data/db
 
   expr:
     image: "mongo-express:0.42.2"
@@ -43,4 +43,4 @@ services:
     ports:
       - 8081:8081
     environment:
-      ME_CONFIG_MONGODB_SERVER: karailiev_db_1  
+      ME_CONFIG_MONGODB_SERVER: ekarailiev_db_1  
